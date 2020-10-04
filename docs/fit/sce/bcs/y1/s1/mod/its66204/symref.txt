@@ -1,4 +1,12 @@
-#{npp-global-font:{was:brill,now:dejaVuSans},npp-zoom:{was:0,now:3}}
+#{"npp.arch":"32-bit", "npp.backup":true, "npp.backup-interval":[30, "secs"],
+"npp.backup-location":".​/backup​/{$fName}​/{$fDateM+\"
+v\"+$fBackupVer+$fExtn}", "npp.font-name-global":"dejaVuSans.ttf",
+"npp.font-name-local":"brill.ttf", "npp.font-size":10, "npp.global-font":true,
+"npp.hyperlink":true, "npp.hyperlink-underline":true, "npp.instance":"mono",
+"npp.line-ending-format":["\r\f", "CRLF"], "npp.menu-bar":"hidden",
+"npp.show-all-chars":false, "npp.show-indent-guide":true,
+"npp.status-bar":"shown", "npp.tab-replace-space":false, "npp.tab-size":4,
+"npp.version:"v7.5.9", "npp.word-wrap":false, "npp.zoom":3}
 ! (factorial | product-of-combinations) is = "n!" where
     the ! is: "xₙ₋₍ₙ₋₁₎*xₙ₋₍ₙ₋₂₎*xₙ₋₍ₙ₋₃₎*…*xₙ₋₁*xₙ". For exam-
     -ple: "5!" is "1*2*3*4*5". ∴ "5!" is 120. Note: "xₙ₋ₙ" is
