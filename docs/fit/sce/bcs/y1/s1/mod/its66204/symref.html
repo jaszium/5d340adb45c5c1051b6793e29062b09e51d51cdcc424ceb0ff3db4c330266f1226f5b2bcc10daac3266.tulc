@@ -13,17 +13,20 @@ Symbols_Reference"/>
 		<style>
 			a{text-decoration:none;color:blue;}
 			a:hover{background-color:lightcyan;<!--text-decoration:underline;-->}
+			abbr[title]{text-decoration:none;color:magenta;} abbr a:hover{color:magenta;}
+			abbr h1{font-style:italic;color:cyan;} abbr h1:hover{color:magenta;}
 			code{font-size:130%;background-color:lightsteelblue;}
 			i span code{font-size:100%;background-color:#ddffff;}
 			#ghPages:hover{background-color:white;}
-			abbr[title]{text-decoration:none;color:magenta;}
-			abbr a:hover{color:magenta;}
-			.dsCodeList{font-size:150%;font-family:dejaVuSans;<!--font-family:monospace;-->}
-		</style>
-		<title>Jaszium | TULC - BCS - ITS66204\SymRef</title>
+			.cD:after{content:" Data ";} .cM:after{content:" Meta ";}
+			.cc:after{content:" Ćńẽʦ ";} .ce:after{content:" End ";} .cm:after{content:" Män ";} .cn:after{content:" Ǹtȩ ";}
+			.md{height:auto;font-size:150%;width:fit-content;text-align:center;border-radius:50px;border:5px solid #2196F3;}
+			.symref{font-size:150%;font-family:system-ui;}
+		</style><!--<style>.symref{font-size:150%;font-family:dejaVuSans;font-family:monospace;}</style>-->
+		<title>Jaszium | TULC - BCS - ITS66204: Symbols Reference</title>
 	</head>
 	<body>
-		<script src="script.js"></script>
+		<!--<script src="script.js"></script>-->
 		<nav class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none" id="ʒsidebar">
 			<button onclick="w3_close()" class="w3-bar-item">Contents&emsp;&emsp;&emsp;&emsp; &ensp; &times;</button>
 			<a class="w3-bar-item w3-button w3-hover-blue w3-light-blue" href="/">Home</a>
@@ -41,16 +44,15 @@ Symbols_Reference"/>
 				</a>
 			</div>
 			<div class="w3-half">
-				<h1 align="center" style="color:cyan">Main:​\α-seq​\tulc​\⋮​\bcs​\⋮​\ds\symref
-				</h1>
+				<h1 align="center" style="color:cyan">Main:​\α-seq​\tulc​\⋮​\bcs​\⋮​\ds\symref</h1>
 			</div>
 			<div class="w3-quarter">
-				<h1 align="right"><i>October 01th, 2020</i></h1>
+				<abbr title="2020−10−03T19:55:00U+0"><h1 align="right">October 03ʳᵈ, 2020</h1></abbr>
 			</div>
 		</div>
 		<div class="w3-row-padding w3-light-blue w3-animate-opacity">
-			<div class="w3-quarter" align="center">
-				<h3><b>Contents</b></h3>
+			<div class="w3-quarter" id="ʒćńẽʦ" align="center">
+				<hr class="md cc"/>
 				<div class="w3-bar">
 					<h4><a class="w3-bar-item w3-btn w3-hover-blue w3-pale-blue" href="#ʒtop">§ Top</a></h4>
 					<h4><a class="w3-bar-item w3-btn w3-hover-blue w3-pale-blue" href="#ʒmän">§ Main</a></h4>
@@ -63,26 +65,55 @@ Symbols_Reference"/>
 					<h4><a class="w3-bar-item w3-btn w3-hover-blue w3-pale-blue" href="symref.txt">☆ Raw</a></h4>
 				</div>
 			</div>
-			<div class="w3-half" id="ʒmän">
-				<h2 align="center">
-					This is the <abbr title="Symbols Reference">Symref</abbr> for
-					<abbr title="Discrete Structures">DS</abbr>.
+			<div class="w3-half" id="ʒmän" align="center">
+				<hr class="md cm"/>
+				<h2>
+					This is the <abbr title="Symbols Reference">Sym Ref</abbr> for <abbr title="Discrete Structures">DS</abbr>.
 				</h2>
-				<p align="center">
+				<p>
 					Hello, <span id="namen">Taylorians</span>! This site is currently in a Work In Progress (WIP) phase.<br/><br/>
 					Here is the complete list of unicode symbols and how they are used in this module.<br/><br/>
 					Use <code>CTRL+F</code> to search by symbol name.
 				</p>
-				<pre class="dsCodeList">#{npp-global-font:{was:brill,now:dejaVuSans},npp-zoom:{was:0,now:3}}
+				<hr class="md cM"/>
+				<code>
+#{"npp.arch":"32-bit", "npp.backup":true, "npp.backup-interval":[30, "secs"], "npp.backup-location":".​/backup​/{$fName}​/{$fDateM+\"
+v\"+$fBackupVer+$fExtn}", "npp.font-name-global":"dejaVuSans.ttf", "npp.font-name-local":"brill.ttf", "npp.font-size":10,
+"npp.global-font":true, "npp.hyperlink":true, "npp.hyperlink-underline":true, "npp.instance":"mono", "npp.line-ending-format":["\r\f",
+"CRLF"], "npp.menu-bar":"hidden", "npp.show-all-chars":false, "npp.show-indent-guide":true, "npp.status-bar":"shown",
+"npp.tab-replace-space":false, "npp.tab-size":4, "npp.version:"v7.5.9", "npp.word-wrap":false, "npp.zoom":3}
+				</code>
+			</div>
+			<div class="w3-quarter" id="ʒǹtȩ" align="center">
+				<hr class="md cn"/>
+				<p>
+					#1: The list of symbols are not formatted properly. It will not resize
+					or wrap when zoomed in. Use +175% on PC for best legibility.<br/><br/>
+					#2: The list of symbols are also incomplete. More details will be added soon,
+					and missing descriptions &amp; examples will be filled in as well.<br/><br/>
+					#3: The list of symbols will be in the order of their Unicode <abbr title="U+xxxx & \uxxxx">codepoint</abbr>.
+					This <abbr title="U+xxxx & \uxxxx">codepoint</abbr> will be a hyperlink to the Wikipedia page of the symbol.<br/><br/>
+					#4: Each item in the list of symbols will contain: <abbr title="U+xxxx & \uxxxx">codepoint</abbr>,
+					<abbr title="ℙ">symbol</abbr>, <abbr title="Double Struck Latin Capital Letter P">formal name</abbr>, 
+					<abbr title="informal name: Primes">alias</abbr>, <abbr title="They are ∈ {2 ≤ x < ∞}, where
+factors of x are itself and 1.">description</abbr>, &amp; <abbr title="{2, 3, 5, 7, 11} are ∈ ℙ">example</abbr>.
+					An item may have multiple <abbr title="informal names">aliases</abbr>, descriptions &amp; examples.
+				</p>
+			</div>
+		</div>
+		<div class="w3-row-padding w3-light-blue w3-animate-opacity">
+			<div class="w3-full" align="center">
+				<hr class="md cD"/>
+				<pre class="symref" align="left">
 ! (factorial | product-of-combinations) is = "n!" where
     the ! is: "xₙ₋₍ₙ₋₁₎*xₙ₋₍ₙ₋₂₎*xₙ₋₍ₙ₋₃₎*…*xₙ₋₁*xₙ". For exam-
     -ple: "5!" is "1*2*3*4*5". ∴ "5!" is 120. Note: "xₙ₋ₙ" is
     invalid ∵ n*0 is still 0. "xₙ₋₍ₙ₋₁₎" can be replaced with "1".
-% ()
+% (percent | per-hundred)
 () (precedance | open-interval | set-not-including) is
     doing the expressions inside the () first. For example:
     (8/4)/2 is 2/2 which is 1, but 8/(4/2) is 8/2 which is 4.
-    Or it can be = "(a, b)" where they are ∈ {a < x < b}.
+    Or it can be = "(a, b)" where they are ∈ {a &lt; x &lt; b}.
     For example: 4 ∨ 18 ∉ (4, 18) but 5 ∧ 17 is, & (0, ∞) ∈ ℕ⁺.
 * (multiplication | times)
 + (addition | plus | sum) is adding the values of at least two ∈ ℝ,
@@ -93,7 +124,7 @@ Symbols_Reference"/>
     3. Or another ex: -(-5) is a double-negative, +″, or  -′;
     so it is 5 ∈ ℝ to the right of the number line from 0.
 / (solidus | divided by)
-< (less than)
+&lt; (less than)
 = (equal to)
 [] (closed-interval | set-including) is = "[a, b]"
     where they are ∈ {a ≤ x ≤ b}.
@@ -120,7 +151,7 @@ Symbols_Reference"/>
 π (greek letter pi constant) is ≈ 3.14159 or ≈ ²²⁄₇ or
     the ratio circumference ∶ ⌀ of any circle
 … (triple-dot | ellipsis) is omitted values from a pattern.
-′ (inverse)rati
+′ (inverse)
 ″ (original or inverse of an inverse)
 ℂ (double-struck C | complexes) are ∈ {ⅈ}
 ℎ (planck constant) is ≈ ?
@@ -140,8 +171,8 @@ Symbols_Reference"/>
 ℤ⁺ (d-s Z +ive | +ive integers) are ∈ ℕ⁺
 ℤ⁰ (d-s Z with 0 | integers including 0) are ∈ ℕ
 ℤ* (d-s Z asterisk | integers except 0) are ∈ (−∞, −1] ∪ ℕ⁺
-ⅆ ()
-ⅇ ()
+ⅆ (?)
+ⅇ (?)
 ⅈ (imaginary)
 ∀ (for all | for any | for each | universal quantifier)
 ∁ (complement set of) is A′, Aᶜ, or ∉ A. Ex: If A ∈ {
@@ -174,7 +205,7 @@ Symbols_Reference"/>
     example: If y = 2x, then y ∝ x, ∴ k is 2.
 ∞ (infinity | no-limit-bounds)
 ∟ (right angle) is = 90°.
-∠ (acute angle) is < 90°.
+∠ (acute angle) is &lt; 90°.
 ∣ (divides) is "x∣y" where x is a factor of b. For example: 3∣15.
 ∤ (does not ∣) is "x∤y" where x is not a factor of b. For example: 4∤10.
 ∥ (parallel to) has variants: ⫲ and ⫳ which mean the same: ∥. It is "x∥y"
@@ -196,9 +227,9 @@ Symbols_Reference"/>
 ≡ (identical to | identity | defined as)
 ≢ (not ≡) | not identity | not defined) is ¬≡
 ≣ (exactly)
-≤ (less than or equal to | < or =)
+≤ (less than or equal to | &lt; or =)
 ≥ (more than or equal to | > or =)
-≪ (orders of magnitude <) is n ≪ eⁿ
+≪ (orders of magnitude &lt;) is n ≪ eⁿ
 ≫ (orders of magnitude >) is eⁿ ≫ n
 ≬ (between)
 ⊂ (subset of) is ℕ ⊂ ℚ where every ∈ ℕ is also in ℚ.
@@ -225,20 +256,14 @@ Symbols_Reference"/>
 𝔹 (d-s B | booleans) are ∈ [0, 1] ∨ {false, true} ∨ {F, T} ∨ {⊥, ⊤}
 𝕌 (d-s U | universals) are ∈ ℝ ∪ ℂ</pre>
 			</div>
-			<div class="w3-quarter" id="ʒǹtȩ">
-				<p align="center">
-					#1: Just ignore this panel for now, it seems to have messed up badly. Will inform when I resolve this...<br/>
-					<br/>#2: Yeah, this feature that I wanted to add into this HTML file needs some PHP file to link to here first.
-				</p>
-			</div>
 		</div>
 		<div class="w3-row-padding w3-light-blue w3-animate-opacity">
 			<div class="w3-quarter">&nbsp;</div>
-			<div class="w3-half" id="ʒend">
-				<h3 align="center">
-					For further inquiries, please head on<br/>over to <abbr title="jaszium/α-seq.tulc"><a href="
-https://github.com/jaszium/5d340adb45c5c1051b6793e29062b09e51d51cdcc424ceb0ff3db4c330266f1226f5b2bcc10daac3266.tulc
-					">Github</a></abbr> for more information.
+			<div class="w3-half" id="ʒend" align="center">
+				<hr class="md ce"/>
+				<h3>
+					For further inquiries, please head on<br/>over to <abbr title="jaszium/α-seq.tulc"><a href="https://github.com/jas
+zium/5d340adb45c5c1051b6793e29062b09e51d51cdcc424ceb0ff3db4c330266f1226f5b2bcc10daac3266.tulc">Github</a></abbr> for more information.
 				</h3>
 			</div>
 			<div class="w3-quarter" align="center">
